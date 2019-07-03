@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Namespace
+metadata: 
+  name: web
+
+---
+apiVersion: v1
+kind: Pod
+  name: redis
+metadata:
+  name: redis         
+  namespace: web
+spec: 
+  container:
+  - name: redis
+    image: redis
+    ports:
+    - containerPort: 9090
+      name: redis
+      protocol: tcp      
