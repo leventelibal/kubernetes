@@ -1,2 +1,1 @@
-# kubernetes
-kubernetes examples 
+# k8-prep
