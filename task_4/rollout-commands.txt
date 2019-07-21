@@ -1,0 +1,19 @@
+
+
+
+-Checking the rollout history of nginx-app
+    
+        kubectl rollout history deployment nginx-app
+
+        REVISION  CHANGE-CAUSE
+        1         version 1.14.0
+        2         version 1.15.1
+
+
+-Rollback the update to previous version
+
+        kubectl rollout undo deployment nginx-app --to-revision=1
+
+        REVISION  CHANGE-CAUSE
+        2         version 1.15.1
+        3         version 1.14.0
