@@ -1,4 +1,4 @@
  Kubernetes Task-2
 ---
 
-![](images/task_2.jpg)
+![](images/task_2.png)
